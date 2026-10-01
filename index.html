@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archiving ASC</title>
+  <meta name="description" content="Self-hosted tool that archives images from selected WhatsApp groups into the operator's Google Drive.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+    <h1>Archiving ASC</h1>
+    <p class="muted">A private, self-hosted media archiving tool.</p>
+
+    <p>Archiving ASC saves images posted in selected WhatsApp group chats to the operator's own Google Drive, sorts them into folders, and logs each one in a Google Sheet. An internal dashboard lets the operator review images that couldn't be sorted automatically.</p>
+
+    <h2>How it uses Google</h2>
+    <ul>
+      <li><strong>Google Drive</strong>: creates an archive folder and its subfolders, uploads images into them, and moves images between them when the operator re-files one. It uses the <code>drive.file</code> permission, which only allows access to files and folders the app itself created.</li>
+      <li><strong>Google Sheets</strong>: writes one row per archived image to a log spreadsheet the app created.</li>
+    </ul>
+
+    <p>The app isn't offered to the public. It runs on the operator's own server and is used only by the operator's Google account.</p>
+
+    <p>See the <a href="privacy.html">Privacy Policy</a> for details on data handling.</p>
+  </main>
+</body>
+</html>
